@@ -1,0 +1,19 @@
+<!--logs.wxml-->
+<body>
+  <view class="container">
+    <view class="box">
+      <view class="question">Question</view>
+      <textarea class="input" maxlength="-1"></textarea>
+      <view>
+        <button size="mini">forever</button>
+        <button size="mini">24h</button>
+        <button size="mini">6h</button>
+      </view>
+      <image src="/images/bin.png" class="bin"></image>
+    </view>
+  </view>
+  <view style="background-color:black;height:200px;margin:0;">
+    <button class="submit">发布</button>
+  </view>
+  
+</body>

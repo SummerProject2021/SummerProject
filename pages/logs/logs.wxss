@@ -1,0 +1,70 @@
+body{
+  background-color:black;
+  color: white;
+  height: 1000px;
+  overflow: scroll;
+}
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+  color: black;
+}
+.log-item {
+  margin: 10rpx;
+}
+.container{
+  background-color: black;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.box{
+  margin:-50px;
+  width:80%;
+  height: auto;
+  padding: 10px;
+  background-color: #eeebdd;
+  overflow: scroll; 
+  border-radius: 10px;
+}
+.question{
+  margin-left: 10px;
+  margin-top: 20px;
+  color: black;
+}
+.input{
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  border: 5px solid black;
+  border-radius: 10px;
+  height: 100px;
+  width: auto;
+  color: black;
+  overflow-y: scroll;
+  background-color: white;
+}
+button{
+  display: inline;
+  margin: 20px 3px 3px 10px; 
+  background-color: black;
+  color: white;
+  font-style: oblique;
+}
+button.submit{
+  margin: auto;
+  display: block;
+  width: 10px;
+  height: auto;
+  background-color: #eeebdd;
+  color: black;
+}
+.bin{
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+}

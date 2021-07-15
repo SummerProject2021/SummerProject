@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" style="height:auto;">
+  <view class="window">
+    <view class="card">
+      <image src="../../images/bg1.png">card1</image>
+    </view>
+    <view class="card">
+      <image src="../../images/bg2.png">card1</image>
+    </view>
+    <view class="card">
+      <image src="../../images/bg2.png">card1</image>
+    </view>
+    <view class="card">
+      <image src="../../images/bg1.png">card1</image>
+    </view>
+    <view class="card">
+      <image src="../../images/bg2.png">card1</image>
+    </view>
+  </view>
+</scroll-view>

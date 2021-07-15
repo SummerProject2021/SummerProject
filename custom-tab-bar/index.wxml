@@ -1,0 +1,5 @@
+<div class="_tabbar {{iPhoneX?'_iPhoneX':''}}">
+    <div class="titem {{_tabbat==0?'tCdk':''}}" data-index="0" bind:tap="switchTap">
+        <image src="/images/Tab.png" />
+    </div>
+</div>
