@@ -1,20 +1,34 @@
 <!--index.wxml-->
 <scroll-view scroll-y="true" style="height:auto;">
   <view class="window">
-    <view class="card">
-      <image src="../../images/bg1.png">card1</image>
+    <view class="left">
+      <view class="card">
+        <image src="../../images/bg2.png">card1</image>
+      </view>
+      <view class="card">
+        <image src="../../images/bg2.png">card1</image>
+      </view>
+      <view class="card">
+        <image src="../../images/bg2.png">card1</image>
+      </view>
     </view>
-    <view class="card">
-      <image src="../../images/bg2.png">card1</image>
-    </view>
-    <view class="card">
-      <image src="../../images/bg2.png">card1</image>
-    </view>
-    <view class="card">
-      <image src="../../images/bg1.png">card1</image>
-    </view>
-    <view class="card">
-      <image src="../../images/bg2.png">card1</image>
+    <view class="right">
+      <view class="daily">
+        <text>Lucky Bite</text>
+        <text>Lucky Bite</text>
+        <text>Lucky Bite</text>
+      </view>
+      <view class="card">
+        <image src="../../images/bg2.png">card1</image>
+      </view>
+      <view class="daily">
+        <text>question</text>
+        <text>card</text>
+        <text>card back</text>
+      </view>
+      <view class="card">
+        <image src="../../images/bg2.png">card1</image>
+      </view>
     </view>
   </view>
 </scroll-view>
