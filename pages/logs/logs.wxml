@@ -9,7 +9,7 @@
         <button size="mini">24h</button>
         <button size="mini">6h</button>
       </view>
-      <image src="/images/bin.png" class="bin"></image>
+      <image src="/images/bin.png" class="bin" bindtap="delete"></image>
     </view>
   </view>
   <view style="background-color:black;height:200px;margin:0;">

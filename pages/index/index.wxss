@@ -11,13 +11,7 @@ image{
   background-size: contain;
   color: white;
 }
-.left{
-  display: flex;
-  flex-direction: column;
-  float: left;
-  width: 50%;
-}
-.left>.card{
+.card{
   width: auto;
   height: 200px;
   padding: 4px;
@@ -26,7 +20,7 @@ image{
   border-radius: 10px;
   color: white;
 }
-.left>.daily{
+.daily{
   width: auto;
   height: auto;
   padding: 4px;
@@ -41,23 +35,11 @@ image{
   float: right;
   width: 50%;
 }
-.right>.card{
-  width: auto;
-  height: 200px;
-  padding: 4px;
-  background-color: #630000;
-  border: 2px solid black;
-  border-radius: 10px;
-  color: white;
-}
-.right>.daily{
-  width: auto;
-  height: auto;
-  padding: 4px;
-  background-color: #EEEBDD;
-  border: 2px solid black;
-  border-radius: 10px;
-  color: black;
+.left{
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 50%;
 }
 text{
   display: block;

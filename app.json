@@ -18,13 +18,13 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "教辅",
+        "text": "我的卡牌",
         "iconPath": "images/Tab.png",
         "selectedIconPath": "images/Tab.png"
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "我的",
+        "text": "我的主页",
         "iconPath": "images/Tab.png",
         "selectedIconPath": "images/Tab.png"
       }
