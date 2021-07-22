@@ -3,12 +3,13 @@
 const app = getApp()
 
 const query = wx.createSelectorQuery()
-query.select('#the-id').boundingClientRect()
-query.selectViewport().scrollOffset()
-query.exec(function (res) {
-  res[0].top // #the-id节点的上边界坐标
-  res[1].scrollTop // 显示区域的竖直滚动位置
-})
+// query.select('#the-id').boundingClientRect()
+// query.selectViewport().scrollOffset()
+// query.exec(function (res) {
+//   res[0].top // #the-id节点的上边界坐标
+//   res[1].scrollTop // 显示区域的竖直滚动位置
+// })
+
 Page({
   data: {
     motto: 'Hello World',
@@ -40,9 +41,16 @@ Page({
     }
   },
   onShow: function () {
-    this.getTabBar().setData({
-      _tabbat: 0
-    })
+    // this.getTabBar().setData({
+    //   _tabbat: 0
+    // })
+    // get the width of the card and set the height
+    const query = wx.createSelectorQuery().in(this)
+    query.select('.card').boundingClientRect(rect => {
+      this.setData({
+        height: rect.width * 1.4 + "px"
+      })
+    }).exec()
   },
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗

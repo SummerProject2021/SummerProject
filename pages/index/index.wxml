@@ -2,13 +2,13 @@
 <scroll-view scroll-y="true" style="height:auto;">
   <view class="window">
     <view class="left">
-      <view class="card">
+      <view class="card" style="height:{{height}};">
         <image src="../../images/bg2.png">card1</image>
       </view>
-      <view class="card">
+      <view class="card" style="height:{{height}};">
         <image src="../../images/bg2.png">card1</image>
       </view>
-      <view class="card">
+      <view class="card" style="height:{{height}};">
         <image src="../../images/bg2.png">card1</image>
       </view>
     </view>
@@ -18,7 +18,7 @@
         <text>Lucky Bite</text>
         <text>Lucky Bite</text>
       </view>
-      <view class="card">
+      <view class="card" style="height:{{height}};">
         <image src="../../images/bg2.png">card1</image>
       </view>
       <view class="daily">
@@ -26,7 +26,7 @@
         <text>card</text>
         <text>card back</text>
       </view>
-      <view class="card">
+      <view class="card" style="height:{{height}};">
         <image src="../../images/bg2.png">card1</image>
       </view>
     </view>
