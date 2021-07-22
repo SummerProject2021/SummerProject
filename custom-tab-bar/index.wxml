@@ -1,5 +1,18 @@
-<div class="_tabbar {{iPhoneX?'_iPhoneX':''}}">
+<!--miniprogram/custom-tab-bar/index.wxml-->
+<cover-view class="tab-bar">
+  <cover-view class="tab-bar-border"></cover-view>
+  <cover-view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+    <cover-image src="images/cards.png"></cover-image>
+    <cover-view style="color: {{selected === index ? selectedColor : color}}">我的卡牌</cover-view>
+  </cover-view>
+</cover-view>
+
+<!-- <div class="_tabbar {{iPhoneX?'_iPhoneX':''}}">
     <div class="titem {{_tabbat==0?'tCdk':''}}" data-index="0" bind:tap="switchTap">
-        <image src="/images/Tab.png" />
+        <div>
+            <view>联系我们</view>
+            <view>我的卡牌</view>
+            <view>我的主页</view>
+        </div>
     </div>
-</div>
+</div> -->

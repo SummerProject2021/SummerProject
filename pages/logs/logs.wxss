@@ -1,8 +1,8 @@
 body{
   background-color:black;
   color: white;
-  height: 1000px;
   overflow: scroll;
+  height: 4500px;
 }
 .log-list {
   display: flex;
@@ -20,13 +20,13 @@ body{
   margin-bottom: 0;
 }
 .box{
-  margin:-50px;
+  margin:-50rpx;
   width:80%;
   height: auto;
-  padding: 10px;
+  padding: 10rpx;
   background-color: #eeebdd;
   overflow: scroll; 
-  border-radius: 10px;
+  border-radius: 20rpx;
 }
 .question{
   margin-left: 10px;
@@ -48,6 +48,7 @@ body{
 }
 button{
   display: inline;
+  justify-content: space-evenly;
   margin: 20px 3px 3px 10px; 
   background-color: black;
   color: white;

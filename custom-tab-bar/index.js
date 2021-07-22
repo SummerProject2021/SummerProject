@@ -43,8 +43,8 @@ Component({
       y1=e.touches[0].pageY;
       //x1>140&x1<180&(y1>10&y1<20)
       if (x1<180) {
-      wx.switchTab({
-        url: urls[0]
+        wx.switchTab({
+          url: urls[0]
       })
       }else if (x1>=180) {
         wx.switchTab({

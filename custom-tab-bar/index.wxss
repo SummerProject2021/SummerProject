@@ -1,8 +1,8 @@
 ._tabbar {
   width: 100%;
-  height: 350rpx;
-  display: block;
-  align-items: center;
+  height: 800rpx;
+  display: flex;
+  justify-content: space-evenly;
   background: #fff;
   font-size: 26rpx;
   color: #999999;
@@ -19,7 +19,7 @@
   height: 350rpx;
 }
 ._tabbar .tCdk {
-  color: #37ADFE;
+  color: #84878a;
 }
 ._iPhoneX {
   height: 148rpx;
