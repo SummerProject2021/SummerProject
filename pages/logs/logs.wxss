@@ -2,7 +2,7 @@ body{
   background-color:black;
   color: white;
   overflow: scroll;
-  height: 4500px;
+  height: 1500rpx;
 }
 .log-list {
   display: flex;
@@ -17,7 +17,7 @@ body{
   background-color: black;
   color: white;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0rem;
 }
 .box{
   margin:-50rpx;

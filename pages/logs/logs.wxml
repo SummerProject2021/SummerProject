@@ -12,8 +12,7 @@
       <image src="/images/bin.png" class="bin" bindtap="delete"></image>
     </view>
   </view>
-  <view style="background-color:black;height:200px;margin:0;">
+  <view style="background-color:black;height:470rpx;margin:0;">
     <button class="submit">发布</button>
   </view>
-  
 </body>
