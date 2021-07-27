@@ -5,7 +5,8 @@ Page({
   data: {
     logs: [],
     answer:'',
-    id:''
+    msg:'',
+    buttons:[{id:1,name:'forever'},{id:2,name:'24h'},{id:3,name:'6h'},{id:4,name:'3h'}]
   },
   onLoad() {
     this.setData({
@@ -45,20 +46,63 @@ Page({
   ,
   submit:function () {
     let content=this.data.answer
+    let go=false;
+    for(let i=0;i<this.data.buttons.length;i++){
+      if(this.data.buttons[i].checked==true)
+        go=true;
+    }
     if(content==''){
       wx.showModal({
         title:"无法发布！",
         content:"您的回答不能为空。",
         showCancel: false
       })
-    }
-  },
-  setTime:function(){
-    let num=this.data.id;
-    if(num==0){
-      wx.showToast({
-        title: 'setTime',
+    }else if(go==false){
+      wx.showModal({
+        title:"无法发布！",
+        content:"您尚未选择时间模块。",
+        showCancel: false
       })
     }
-  }
+  },
+  radioButtonTap: function (e) {
+    console.log(e)
+    let id = e.currentTarget.dataset.id
+    console.log(id)
+    for (let i = 0; i < this.data.buttons.length; i++) {
+      if (this.data.buttons[i].id == id) {
+        //当前点击的位置为true即选中
+        this.data.buttons[i].checked = true;
+      }
+      else {
+        //其他的位置为false
+        this.data.buttons[i].checked = false;
+      }
+    }
+    this.setData({
+      buttons: this.data.buttons,
+      msg: "id:"+id
+    })
+  },
+  checkButtonTap:function(e){
+    console.log(e)
+    let id = e.currentTarget.dataset.id
+    console.log(id)
+    for (let i = 0; i < this.data.buttons.length; i++) {
+      if (this.data.buttons[i].id == id) {
+        if (this.data.buttons[i].checked == true) {
+          this.data.buttons[i].checked = false;
+         
+        } else {
+          this.data.buttons[i].checked = true;
+          
+        }
+      }
+    }
+   this.setData({
+     buttons: this.data.buttons,
+     msg: "id:"+id
+    })
+    
+  },
 })

@@ -4,16 +4,15 @@
     <view class="box">
       <view class="question">Question</view>
       <textarea value="{{answer}}" class="input" maxlength="-1" bindinput="inputAnswer"></textarea>
-      <view>
-        <button bindtap="setTime" size="mini">forever</button>
-        <button size="mini">24h</button>
-        <button size="mini">6h</button>
+      <view class="button">
+        <block wx:for="{{buttons}}" wx:key="buttons">
+          <button class='{{item.checked?"checked_button":"normal_button"}}' data-id='{{item.id}}' bindtap='radioButtonTap' size="mini">{{item.name}}</button>
+        </block>
       </view>
       <image src="/images/bin.png" class="bin" bindtap="delete"></image>
     </view>
   </view>
   <view  style="background-color:black;height:200px;margin:0;">
-    <button class="submit" bindtap="submit">发布</button>
+    <button class="submit" bindtap="submit" hover-class="submit_hover">发布</button>
   </view>
-  
 </body>

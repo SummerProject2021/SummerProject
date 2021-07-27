@@ -49,9 +49,19 @@ body{
 button{
   display: inline;
   margin: 20px 3px 3px 10px; 
-  background-color: black;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.normal_button{
+  background: black;
   color: white;
-  font-style: oblique;
+}
+.checked_button{
+  background: red;
+  color: white;
 }
 button.submit{
   margin: auto;
@@ -60,6 +70,14 @@ button.submit{
   height: auto;
   background-color: #eeebdd;
   color: black;
+}
+.submit_hover{
+  margin: auto;
+  display: block;
+  width: 10px;
+  height: auto;
+  background-color: white;
+  color: green;
 }
 .bin{
   width: 20px;
