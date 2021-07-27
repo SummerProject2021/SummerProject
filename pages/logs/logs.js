@@ -3,7 +3,9 @@ const util = require('../../utils/util.js')
 
 Page({
   data: {
-    logs: []
+    logs: [],
+    answer:'',
+    id:''
   },
   onLoad() {
     this.setData({
@@ -20,6 +22,13 @@ Page({
       _tabbat: 0
     })
   },
+  inputAnswer:function(e){
+    this.setData({
+      answer: e.detail.value
+    })
+    console.log(this.data.answer)
+  }
+  ,
   delete:function () {
     wx.showModal({
       content: '确认删除该问题吗？',
@@ -32,5 +41,24 @@ Page({
         }
       }
     })
+  }
+  ,
+  submit:function () {
+    let content=this.data.answer
+    if(content==''){
+      wx.showModal({
+        title:"无法发布！",
+        content:"您的回答不能为空。",
+        showCancel: false
+      })
+    }
+  },
+  setTime:function(){
+    let num=this.data.id;
+    if(num==0){
+      wx.showToast({
+        title: 'setTime',
+      })
+    }
   }
 })
