@@ -1,6 +1,6 @@
 /**index.wxss**/
 .window{
-  background-color: black;
+  background-color: #8f8ccf;
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -15,9 +15,9 @@ image{
   width: auto;
   height: 200px;
   padding: 4px;
-  background-color: #630000;
-  border: 2px solid black;
+  background-color: #241E92;
   border-radius: 10px;
+  margin: 1%;
   color: white;
 }
 .daily{
@@ -25,7 +25,7 @@ image{
   height: auto;
   padding: 4px;
   background-color: #EEEBDD;
-  border: 2px solid black;
+  margin: 1%;
   border-radius: 10px;
   color: black;
 }

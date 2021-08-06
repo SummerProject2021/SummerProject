@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/index/index",
     "pages/logs/logs",
+    "pages/index/index",
     "custom-tab-bar/index"
   ],
   "window":{
@@ -19,14 +19,14 @@
       {
         "pagePath": "pages/index/index",
         "text": "我的卡牌",
-        "iconPath": "images/Tab.png",
-        "selectedIconPath": "images/Tab.png"
+        "iconPath": "images/tarot.png",
+        "selectedIconPath": "images/tarot.png"
       },
       {
         "pagePath": "pages/logs/logs",
         "text": "我的主页",
-        "iconPath": "images/Tab.png",
-        "selectedIconPath": "images/Tab.png"
+        "iconPath": "images/12.png",
+        "selectedIconPath": "images/11.png"
       }
     ]},
   "style": "v2",

@@ -3,13 +3,13 @@
   <view class="window">
     <view class="left">
       <view class="card" style="height:{{height}};">
-        <image src="../../images/bg2.png">card1</image>
+        <image src="../../images/bg1.png">card1</image>
       </view>
       <view class="card" style="height:{{height}};">
         <image src="../../images/bg2.png">card1</image>
       </view>
       <view class="card" style="height:{{height}};">
-        <image src="../../images/bg2.png">card1</image>
+        <image src="../../images/bg1.png">card1</image>
       </view>
     </view>
     <view class="right">
@@ -27,7 +27,7 @@
         <text>card back</text>
       </view>
       <view class="card" style="height:{{height}};">
-        <image src="../../images/bg2.png">card1</image>
+        <image src="../../images/bg1.png">card1</image>
       </view>
     </view>
   </view>

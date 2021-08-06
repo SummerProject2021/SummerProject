@@ -1,5 +1,9 @@
 <!--logs.wxml-->
 <body>
+  <view class="mask" wx:if="{{showPop}}"></view>
+  <view class="pop" wx:if="{{showPop}}">
+    <view class="text">发布成功！</view>
+  </view>
   <view class="container">
     <view class="box">
       <view class="question">Question</view>
@@ -12,7 +16,7 @@
       <image src="/images/bin.png" class="bin" bindtap="delete"></image>
     </view>
   </view>
-  <view  style="background-color:black;height:200px;margin:0;">
+  <view  style="background-color:#8f8ccf;height:200px;margin:0;">
     <button class="submit" bindtap="submit" hover-class="submit_hover">发布</button>
   </view>
 </body>

@@ -4,6 +4,7 @@ const util = require('../../utils/util.js')
 Page({
   data: {
     logs: [],
+    showPop:false,
     answer:'',
     msg:'',
     buttons:[{id:1,name:'forever'},{id:2,name:'24h'},{id:3,name:'6h'},{id:4,name:'3h'}]
@@ -63,6 +64,8 @@ Page({
         content:"您尚未选择时间模块。",
         showCancel: false
       })
+    }else{
+      this.pop();
     }
   },
   radioButtonTap: function (e) {
@@ -105,4 +108,17 @@ Page({
     })
     
   },
+  pop:function() {
+    this.setData({
+      showPop:true
+    })
+    setTimeout(() => {
+      this.done_pop();
+    }, 1500);
+  },
+  done_pop:function(){
+    this.setData({
+      showPop:false
+    })
+  }
 })
