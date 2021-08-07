@@ -14,7 +14,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    navState:0
   }
 })
 //this is test code testing git push

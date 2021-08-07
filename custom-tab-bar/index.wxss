@@ -24,3 +24,18 @@
 ._iPhoneX {
   height: 148rpx;
 }
+.style-roll{
+  background-color: rgb(130, 177, 247);
+  padding: 100rpx 0;
+  text-align: center;
+}
+.nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx;
+  background-color: rgb(129, 241, 55);
+  font-size: 30rpx;
+}
+.nav-switch-style{
+  color: snow;
+}

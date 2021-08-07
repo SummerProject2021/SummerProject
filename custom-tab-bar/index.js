@@ -5,16 +5,25 @@ Component({
   properties: {
 
   },
-
   /**
    * 组件的初始数据
    */
   data: {
     _tabbat: 0,
     iPhoneX: false,
+    page:0,
     urls: [
       '/pages/index/index',
       '/pages/logs/logs'
+    ],
+    list:[
+    { text:"我的卡牌",
+      pagePath:"/pages/index/index"
+    },
+    { text:"提问箱",
+      pagePath:"/pages/logs/logs"
+    }
+    ,{text:"暂未使用"}
     ]
   },
   attached() {
@@ -35,22 +44,38 @@ Component({
    */
   methods: {
     switchTap: function (e) {
-      var self = this
-      var index = e.currentTarget.dataset.index;
-      var urls = self.data.urls
-      var x1,y1;
-      x1=e.touches[0].pageX;
-      y1=e.touches[0].pageY;
-      //x1>140&x1<180&(y1>10&y1<20)
-      if (x1<180) {
-      wx.switchTab({
-        url: urls[0]
+      var index = e.detail.current;
+      this.setData({
+        page:index
       })
-      }else if (x1>=180) {
+      if (this.data.page==0) {
+      wx.switchTab({
+        url: this.data.urls[0]
+      })
+      }else if (this.data.page==1) {
         wx.switchTab({
-          url: urls[1]
+          url: this.data.urls[1]
         })
       }
-    }
+    },
+    
+  //监听滑块
+  bindchange(e) {
+    // console.log(e.detail.current)
+    let index = e.detail.current;
+    let app=getApp();
+    app.globalData.navState=index;
+    this.setData({
+      page:index
+    })
+  },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function(options) {
+    this.setData({
+      page:0
+    })
   }
+  },
 })

@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/logs/logs",
     "pages/index/index",
+    "pages/logs/logs",
     "custom-tab-bar/index"
   ],
   "window":{
@@ -10,7 +10,7 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },"tabBar": {
-    "custom": false,   
+    "custom": true,   
     "color": "#7A7E83",
     "selectedColor": "#3cc51f",
     "borderStyle": "black",

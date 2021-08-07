@@ -1,5 +1,15 @@
-<div class="_tabbar {{iPhoneX?'_iPhoneX':''}}">
-    <div class="titem {{_tabbat==0?'tCdk':''}}" data-index="0" bind:tap="switchTap">
-        <image src="/images/Tab.png" />
-    </div>
-</div>
+
+<view>
+    <view wx:if="{{page==0}}">0</view>
+    <view wx:elif="{{page==1}}">1</view>
+    <view wx:elif="{{page==2}}">2</view>
+</view>
+<swiper bindchange="switchTap">
+    <block wx:for="{{list}}" wx:for-index="index" wx:key="index">
+    <swiper-item data-current="{{page}}">
+      <view class="style-roll">
+        <text>{{item.text}}</text>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
