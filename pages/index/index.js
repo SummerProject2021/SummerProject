@@ -74,6 +74,8 @@ Page({
     })
   },
   switchPage:function(){
-
+    wx.navigateTo({
+      url: '../logs/logs',
+    })
   }
 })

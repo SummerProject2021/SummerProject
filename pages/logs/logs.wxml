@@ -1,22 +1,24 @@
 <!--logs.wxml-->
-<body>
+<view class="window">
   <view class="mask" wx:if="{{showPop}}"></view>
   <view class="pop" wx:if="{{showPop}}">
-    <view class="text">发布成功！</view>
+    <view class="text">发布成功!</view>
   </view>
   <view class="container">
     <view class="box">
-      <view class="question">Question</view>
+      <image src="/images/cross.png" class="delete" bindtap="delete"></image> 
+      <view class="title">
+        可以分享一首你最爱听的歌嘛？
+      </view>
       <textarea value="{{answer}}" class="input" maxlength="-1" bindinput="inputAnswer"></textarea>
       <view class="button">
         <block wx:for="{{buttons}}" wx:key="buttons">
           <button class='{{item.checked?"checked_button":"normal_button"}}' data-id='{{item.id}}' bindtap='radioButtonTap' size="mini">{{item.name}}</button>
         </block>
-      </view>
-      <image src="/images/bin.png" class="bin" bindtap="delete"></image>
-    </view>
+      </view> 
+      <view>
+      <button class="submit" bindtap="submit" hover-class="submit_hover">发布</button>
+      </view>   
+    </view>   
   </view>
-  <view  style="background-color:#8f8ccf;height:200px;margin:0;">
-    <button class="submit" bindtap="submit" hover-class="submit_hover">发布</button>
-  </view>
-</body>
+</view>

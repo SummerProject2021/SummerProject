@@ -2,16 +2,19 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
+    "pages/aboutUs/aboutUs",
     "custom-tab-bar/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "我的卡牌",
+    "navigationBarTextStyle":"white",
+    "navigationStyle": "default",
     "enablePullDownRefresh": true
-  },"tabBar": {
-    "custom": true,   
+  },
+  "tabBar": {
+    "custom": false,   
     "color": "#7A7E83",
     "selectedColor": "#3cc51f",
     "borderStyle": "black",
@@ -24,8 +27,8 @@
         "selectedIconPath": "images/tarot.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "我的主页",
+        "pagePath": "pages/aboutUs/aboutUs",
+        "text": "关于我们",
         "iconPath": "images/12.png",
         "selectedIconPath": "images/11.png"
       }
