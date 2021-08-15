@@ -1,7 +1,11 @@
 /**index.wxss**/
+view{
+  color:var(--themecolor);
+}
 .window {
   background-image: url(https://z3.ax1x.com/2021/08/08/fluKXT.jpg);
   /* background-color: #8f8ccf; */
+  background-attachment: fixed;
   color: white;
   display: flex;
   flex-wrap: wrap;

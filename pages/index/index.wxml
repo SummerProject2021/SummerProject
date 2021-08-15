@@ -3,16 +3,16 @@
   <view class="window">
     <view class="left">
       <view class="card" style="height:{{height}};">
-        <image src="../../images/bg1.png">card1</image>
+        <image src="../../images/bg1.png" bindtap="switchPage">card1</image>
       </view>
       <view class="answered"> 
         <image src="../../images/answered.png">answered1</image>
       </view>
       <view class="card" style="height:{{height}};">
-        <image src="../../images/bg2.png">card1</image>
+        <image src="../../images/bg2.png" bindtap="switchPage">card1</image>
       </view>
       <view class="card" style="height:{{height}};">
-        <image src="../../images/bg1.png">card1</image>
+        <image src="../../images/bg1.png" bindtap="switchPage">card1</image>
       </view>
     </view>
     <view class="right">
@@ -20,13 +20,13 @@
         <image src="../../images/luckBite.png">lb1</image>
       </view>
       <view class="card" style="height:{{height}};">
-        <image src="../../images/bg2.png">card1</image>
+        <image src="../../images/bg2.png" bindtap="switchPage">card1</image>
       </view>
       <view class="daily">
-        <image src="../../images/luckBite.png">lb2</image>
+        <image src="../../images/luckBite.png" >lb2</image>
       </view>
       <view class="card" style="height:{{height}};">
-        <image src="../../images/bg1.png">card1</image>
+        <image src="../../images/bg1.png" bindtap="switchPage">card1</image>
       </view>
     </view>
   </view>

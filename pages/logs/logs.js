@@ -54,14 +54,14 @@ Page({
     }
     if(content==''){
       wx.showModal({
-        title:"无法发布！",
-        content:"您的回答不能为空。",
+        title:"无法发布",
+        content:"您的回答不能为空",
         showCancel: false
       })
     }else if(go==false){
       wx.showModal({
-        title:"无法发布！",
-        content:"您尚未选择时间模块。",
+        title:"无法发布",
+        content:"您尚未选择时间模块",
         showCancel: false
       })
     }else{

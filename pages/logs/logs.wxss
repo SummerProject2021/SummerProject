@@ -1,7 +1,6 @@
-body{
-  background-color:#8f8ccf;
-  color: white;
-  height: 1000px;
+.window{
+  background-image: url(https://z3.ax1x.com/2021/08/08/fluKXT.jpg);
+  height: 1500rpx;
   overflow: scroll;
 }
 .log-list {
@@ -14,33 +13,41 @@ body{
   margin: 10rpx;
 }
 .container{
-  background-color: #8f8ccf;
   color: white;
   margin-top: 0;
   margin-bottom: 0;
+  height:1400rpx;
+
+}
+.title{
+  margin-left: 20rpx;
+  margin-top: 40rpx;
+  font-size: 18PX;
+  color: black;
+  height: 100rpx;
 }
 .box{
-  margin:-50px;
+  margin:-100rpx;
   width:80%;
-  height: auto;
-  padding: 10px;
+  height: 940rpx;
+  padding: 20rpx;
   background-color: #eeebdd;
   overflow: scroll; 
   border-radius: 10px;
 }
 .question{
-  margin-left: 10px;
-  margin-top: 20px;
+  margin-left: 20rpx;
+  margin-top: 40rpx;
   color: black;
 }
 .input{
-  margin-top: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 5px;
-  border: 5px solid black;
-  border-radius: 10px;
-  height: 100px;
+  margin-top: 60rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding: 10rpx;
+  border: 10rpx solid black;
+  border-radius: 20rpx;
+  height: 300rpx;
   width: auto;
   color: black;
   overflow-y: scroll;
@@ -48,9 +55,11 @@ body{
 }
 button{
   display: inline;
-  margin: 20px 3px 3px 10px; 
+  margin: 40rpx 6rpx 6rpx 20rpx; 
 }
 .button{
+  margin-top: 40rpx;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -64,39 +73,38 @@ button{
   color: white;
 }
 button.submit{
-  margin: auto;
+  margin-top: 60rpx;
   display: block;
-  width: 10px;
+  width: 20rpx;
   height: auto;
-  background-color: #eeebdd;
-  color: black;
+  background: -webkit-linear-gradient(left,#241E92,#7B78AD);
+  color: white;
 }
 .submit_hover{
   margin: auto;
   display: block;
-  width: 10px;
+  width: 20rpx;
   height: auto;
   background-color: white;
   color: green;
 }
-.bin{
-  width: 20px;
-  height: 20px;
-  margin: auto;
-  margin-top: 30px;
-  display: flex;
+.delete{
+  margin-top: 10rpx;
+  margin-left: 550rpx;
+  width: 40rpx;
+  height: 40rpx;
 }
 .pop{
   width: 90%;
   height: 10%;
   position: fixed;
-  top: 200px;
+  top: 600rpx;
   left: 0;
   right: 0;
   z-index: 9999;
   margin: 0 auto;
   background-color: #241E92;
-  border-radius:10px;
+  border-radius:20rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,12 +114,12 @@ button.submit{
   color: white;
   font-size: 25PX;
   text-align: center;
-  margin-top: 4%;
+  margin-top: 50rpx;
 }
 .mask{
   width: 100%;
   height: 100%;
-  position: fixed;
+  position: flex;
   top: 0;
   left: 0;
   background: #000;
